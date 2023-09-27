@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Questions and answer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-4xl font-bold mx-5 my-5">Blog Questions and Answers</h1>
+    </header>
+    <section class="mt-10">
+        <div>
+            <h2 class="text-2xl font-semibold ml-10">1. Discuss the scope of var, let, and const</h2> <br>
+            <p class="text-xl font-normal ml-10 text-start"> - In JavaScript, 'var', 'let', and 'const' are used to
+                declare variables, but they have different scopes
+                and behaviors:
+                <br> <br>
+                'var': Variables declared with `var` are function-scoped. This means they are visible throughout the
+                entire function in which they are declared, even if declared within loops or conditional statements.
+                `var` declarations are also subject to hoisting, meaning they are moved to the top of their function
+                scope during compilation.
+                <br><br>
+                'let': Variables declared with `let` are block-scoped. They are limited in visibility to the block
+                (enclosed by curly braces) in which they are defined. This makes `let` more predictable and safer than
+                `var` for avoiding unintended variable leaks or scope issues. `let` is not hoisted, so it's only
+                accessible after its declaration.
+                <br> <br>
+                'const': Variables declared with `const` are also block-scoped like `let`, but they cannot be reassigned
+                after their initial value is assigned. However, it's important to note that the "constant" here only
+                applies to the binding between the variable name and its value. If the value is an object or an array,
+                you can still modify the properties or elements of the object or array.
+                <br> <br>
+                Using `let` and `const` is generally recommended over `var` as they provide better control over variable
+                scope and can help prevent unintentional bugs in your code. It's a good practice to use `const` for
+                values that should not change and `let` for values that might need to change. <br> <br>
+            </p>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-2xl font-semibold ml-10">2. Tell us the use cases of null and undefined</h2> <br>
+            <p class="text-xl font-normal ml-10 text-start">In JavaScript, both 'null' and 'undefined'='' represent the
+                absence of a value, but they are used in
+                slightly different contexts:
+                <br> <br>
+                'null': It is a deliberate value that represents the absence of any object value. It's often used to
+                indicate the intentional absence of a value or when you want to reset a variable to indicate that it has
+                no valid object value.
+                <br><br>
+                'undefined': A variable that has been declared but has not been assigned a value is automatically
+                initialized with `undefined`. It can also be explicitly assigned to a variable. `undefined` is typically
+                used to indicate the absence of a value or when a value is missing.
+
+                <br><br>
+
+                Use cases for 'null':
+                - Explicitly indicating the absence of a value.
+                - Resetting a variable that held an object.
+                - Checking for the presence or absence of a value in custom logic.
+                <br><br>
+                Use cases for 'undefined':
+                - Default function parameters that are not provided.
+                - Variables that haven't been initialized.
+                - Properties or variables that don't exist in an object or scope.
+
+                <br><br>
+
+                It's important to handle both `null` and `undefined` properly in your code to avoid unexpected behavior
+                or errors. You can use checks like `if (variable === null)` or `if (typeof variable === 'undefined')` to
+                differentiate between the two.
+                <br><br>
+            </p>
+
+        </div>
+
+        <div class="mt-5 mb-10">
+            <h2 class="text-2xl font-semibold ml-10">3. What do you mean by REST API?</h2> <br>
+            <p class="text-xl font-normal ml-10 text-start">- REST stands for Representational State Transfer, and it's
+                an architectural style for designing networked
+                applications, particularly web services. A RESTful API (Application Programming Interface) is a set of
+                rules and conventions that allow different software applications to communicate with each other over the
+                internet using HTTP methods.
+                <br> <br>
+                In a RESTful API:
+                - Resources (such as data or objects) are identified by URLs (Uniform Resource Locators).
+                - HTTP methods like GET, POST, PUT, and DELETE are used to perform operations on these resources.
+                - Responses are typically returned in a structured format, often in JSON or XML.
+                <br> <br>
+                Key characteristics of a RESTful API include: 
+                <br><br>
+                i. **Statelessness:** Each request from a client to the server must contain all the information needed
+                to understand and process the request. The server doesn't store client state between requests.
+                <br> <br>
+                ii. **Client-Server Architecture:** The client and server are separate entities. The client is
+                responsible for the user interface and user experience, while the server handles data storage,
+                processing, and security.
+                <br> <br>
+                iii. **Cacheability:** Responses from the server can be cached to improve performance. Clients can use
+                caching to avoid unnecessary requests to the server.
+                <br> <br>
+                iv. **Uniform Interface:** A consistent and standardized way to interact with resources is provided.
+                This includes using standard HTTP methods (GET, POST, PUT, DELETE) and following a resource's URL
+                structure.
+                <br> <br>
+                v. **Layered System:** Intermediary servers (proxies, gateways, etc.) can be used between clients and
+                the main server, allowing for additional functionalities without affecting the client.
+                <br> <br>
+                vi. **Code on Demand (optional):** Servers can extend the functionality of clients by sending executable
+                code. This aspect is optional in a RESTful architecture.
+                <br> <br>
+                RESTful APIs are widely used for building web applications, mobile apps, and services that need to
+                interact with each other over the internet. They provide a flexible and scalable way to expose and
+                consume data and functionalities between different software systems.
+            </p>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
